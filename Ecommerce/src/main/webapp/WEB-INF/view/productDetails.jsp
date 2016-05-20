@@ -70,7 +70,7 @@
   <!-- <button class="btn btn-lg btn-brand btn-full-width">
    Add to Cart
   </button>
-  -->   <a href="${session.getContextPath()}/Ecommerce/order/${product.id}">add to cart</a></div>
+  -->   <a href="${session.getContextPath()}/Ecommerce/order">add to cart</a></div>
 </div><!-- end row -->
 
 <div class="row">
@@ -91,13 +91,8 @@
  </div>
 </div>
 
-<div class="row">
- <div class="col-md-4 text-center">
-  <span class="monospaced">In Stock</span>
- </div>
- <div class="col-md-4 col-md-offset-1 text-center">
-  <a class="monospaced" href="#">Add to Shopping List</a>
- </div>
+
+ 
 </div>
 </div>
 </div>

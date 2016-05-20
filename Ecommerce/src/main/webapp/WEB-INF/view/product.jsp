@@ -64,6 +64,6 @@ var app=angular.module("searchApp",[]).controller("TableCtrl",function($scope)
        
     </table></div>
 </div> 
-hdh
+
 <%@include file="Footer.jsp" %>
  

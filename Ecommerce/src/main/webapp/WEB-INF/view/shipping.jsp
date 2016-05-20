@@ -1,4 +1,3 @@
-<%@ page import="com.model.*" ;%>
 <%-- <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -45,10 +44,7 @@
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<sf:form modelAttribute="product" method="post">
-<% Cart c=(Cart)session.getAttribute("cart");
-out.println(c.getCartId());
 
-%>
 
 					<table class="table table-striped">
 						<thead>

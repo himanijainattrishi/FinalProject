@@ -16,20 +16,24 @@ public class customerservice {
 	@Autowired
 	public customerservice(customerimp c) 
 	{
-     this.c=c;
-
+this.c=c;
+		// TODO Auto-generated constructor stub
 	}
 
 
 
+	
+
+
+	public void setC(customerimp c) {
+		this.c = c;
+	}
+
+
 
 	
-	 public User getUserById(int id)
-	 {
-		 return c.getUserById(id);
-	 }
+	
 
-	 
  
 	public void adduser(User user) {  
 		System.out.println("service");

@@ -10,22 +10,8 @@
 <head>
 <title>HOME PAGE</title>
 <meta name="viewport content=" width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="resource/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="resource/bootstrap/css/bootstrap-theme.min.css">   
-
- <link
-	href="https://cdnjs.cloudflare.com/ajax/libsl/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"
-	rel="stylesheet" />
-
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
-	rel="stylesheet" />
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
- 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
- 
-
+ <link rel="stylesheet" href="resource/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="resource/bootstrap/css/bootstrap-theme.min.css">  
 <style>
 .navbar-default {
 	background-color: #CC0000;
@@ -266,8 +252,18 @@ footer-->.full {
 }
 </style>
 
-</head>
-<body>
+ <link
+	href="https://cdnjs.cloudflare.com/ajax/libsl/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"
+	rel="stylesheet" />
+
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
+	rel="stylesheet" />
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ 
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script></head>
+ <body>
 	<!-- <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script> -->
 
 
@@ -296,7 +292,7 @@ footer-->.full {
 
 								
 								<li class="dropdown-submenu"><a tabindex="-1"
-									href="${session.getContextPath()}/Ecommerce/product/Face">Eyes
+									href="${session.getContextPath()}/Ecommerce/product/face">Eyes
 										<i class="fa fa-chevron-left"></i>
 								</a>
 									<ul class="dropdown-menu">
@@ -317,8 +313,8 @@ footer-->.full {
 									<ul class="dropdown-menu">
 
 										<li><a tabindex="-1" href="#">Lipstick</a></li>
-										<li><a href="${session.getContextPath()}/Ecommerce/product/Lips">Lipgloss</a></li>
-										<li><a href="${session.getContextPath()}/Ecommerce/product/Lips">Liplinear</a></li>
+										<li><a href="#">Lipgloss</a></li>
+										<li><a href="#">Liplinear</a></li>
 									</ul></li>
 								
 
@@ -338,11 +334,11 @@ footer-->.full {
 
 							</ul></li>
 						<!--End  .dropdown -->
-						<li><a href="contact">CONTACT US</a></li></ul>
-						 <ul class="nav navbar-nav navbar-right">
-      <li><a href="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
+						<li><a href="contact">CONTACT US</a></li>
+						<li><a href="register">Sign Up</a></li>
+						<li><a href="login">Sign In</a></li>
+
+					</ul>
 					<!-- .nav .navbar-nav -->
 				</div>
 				<!-- /.navbar-collapse -->
@@ -352,13 +348,41 @@ footer-->.full {
 		<!-- /.container-fluid -->
 	</nav> 
 	
-	<!--  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
 	
 	
-</body>
- 
-<!-- <script src="resource/bootstrap/js/bootstrap.min.js"></script>  -->
-<!--  <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
-</html>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" interval="1000">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+     <a href="product"><img src="resource/images/image10.jpg" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+     <a href="product"><img src="resource/images/image11.jpg" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+     <a href="product"><img src="resource/images/image12.jpg" alt="..."></a>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	
+	
+	
+	
+	
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="resource/bootstrap/js/bootstrap.min.js"></script>
+	</html>
+	

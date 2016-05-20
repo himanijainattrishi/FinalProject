@@ -1,4 +1,4 @@
-<%@include file="Header.jsp"%>
+<%@include file="WEB-INF/view/Header.jsp"%>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" interval="1000">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -49,7 +49,7 @@
   
   <div class="col-md-3">
     <a href="${session.getContextPath()}/Ecommerce/product/Face" >
-      <p>COMPACT FINAL TOUCH TIPS</p>
+      <p>COMPACT FINAL TOUCH TIPS!!!</p>
       <img src="resource/images/face1.jpg" class="img-responsive" alt="Cinque Terre" style="width:300px;height:150px">
     </a>
   </div>
@@ -124,7 +124,7 @@
  <script src="resource/bootstrap/js/bootstrap.min.js"></script>
  -->
 
-<%@include file="Footer.jsp" %>
+<%@include file="WEB-INF/view/Footer.jsp" %>
 
 <!-- </div> -->
 

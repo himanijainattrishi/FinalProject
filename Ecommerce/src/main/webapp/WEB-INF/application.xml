@@ -38,14 +38,6 @@
  <bean id="c" class="com.dao.customerimp">
  <property name="sessionFactory" ref="sessionFactory"></property>
  </bean>
-  <bean id="cart" class="com.dao.CartItemDAOImp">
- <property name="sessionFactory" ref="sessionFactory"></property>
- </bean>
-  <bean id="cartService" class="com.dao.CartDAOImp">
- <property name="sessionFactory" ref="sessionFactory"></property>
- </bean>
- 
- 
  
  
  <bean id="service" class="com.service.productservice">
@@ -54,13 +46,6 @@
  <bean id="service1" class="com.service.customerservice">
  <property name="c" ref="c"></property>
  </bean>
- <bean id="CartItemService" class="com.service.CartItemService">
- <property name="cart" ref="cart"></property>
- </bean>
- <bean id="CartService1" class="com.service.CartService">
- <property name="cartService" ref="cartService"></property>
- </bean>
-
  
 <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />

@@ -11,12 +11,16 @@ import com.model.User;
 public class customerimp implements customerdao 
 { 
 	private SessionFactory sessionFactory;  
+	
 	@Autowired
 	public customerimp(SessionFactory sessionFactory) 
 	{
 		super();
 		this.sessionFactory = sessionFactory;
+		// TODO Auto-generated constructor stub
 	}
+	 
+	
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
@@ -31,12 +35,7 @@ public class customerimp implements customerdao
 		System.out.println("user add1");
 		
 	}
-	 public User getUserById(int id)
-	 {
-		Session session= sessionFactory.getCurrentSession();
-		User u=(User)session.load(User.class,new Integer(id));	
-		return u;
-	}
-	    
+	
+	
 
 }

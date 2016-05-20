@@ -1,3 +1,6 @@
+
+
+
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
 <footer> <div class="footer" id="footer">
  <div class="container"> <div class="row"> 
@@ -45,7 +48,10 @@
                 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
- <script src="resource/bootstrap/js/bootstrap.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+ 
+<!--  <script src="resource/bootstrap/js/bootstrap.min.js"></script> -->
 </body>
 </html>
 

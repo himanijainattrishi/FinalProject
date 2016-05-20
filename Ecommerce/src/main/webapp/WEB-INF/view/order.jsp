@@ -1,10 +1,10 @@
-<%-- <%@page import="com.model.*" ;%> --%>
+
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
 	
 	 <%@include file="Header.jsp" %>
 	<%--  <div class="content">
-			<fieldset> 
+			<fieldset>
 				<legend><b>Your Order</b>/</legend>
 				
 				 <a href="index">home</a><br /><br />
@@ -35,10 +35,7 @@
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<sf:form modelAttribute="product" method="post">
-<%-- <% Cart c=(Cart)session.getAttribute("cart");
-out.println(c.getCartId());
 
-%> --%>
 
 					<table class="table table-striped">
 						<thead>
@@ -47,8 +44,7 @@ out.println(c.getCartId());
 								<th>Name</th>
 								<th>Brand</th>
 								<th>Description</th>
-								<th>price</th>
-								<th>Qunatity</th>
+								<th>Color</th>
 								
 								
 							</tr>
@@ -62,8 +58,7 @@ out.println(c.getCartId());
 								<td>${product.name}</td>
 								<td>${product.brand}</td>
 								<td>${product.desc}</td>
-								<td>${product.price}</td>
-								<td>${product.quantity}</td>
+								<td>${product.color}</td>
 								
 							</tr>
 
