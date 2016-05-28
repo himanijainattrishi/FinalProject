@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.model.Address;
 import com.model.User;
 
 @Repository
@@ -28,12 +29,18 @@ public class customerimp implements customerdao
 	{
 		return sessionFactory.openSession();
 	}
-	public void adduser(User user) 
+	public String adduser(User user) 
 	{
 		System.out.println("user add");
 		sessionFactory.getCurrentSession().saveOrUpdate(user); 
 		System.out.println("user add1");
-		
+		return "success";
+	}
+	public String insertaddress(Address address) {
+		Session session=sessionFactory.getCurrentSession();
+		session.save(address);		
+		System.out.println("User DAO");
+		return "success";
 	}
 	
 	

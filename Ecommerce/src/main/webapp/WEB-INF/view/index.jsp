@@ -99,15 +99,15 @@
 
  <div class="row">
 <div class="col-sm-2"></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product1" ><img src="resource/images/product2.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product" ><img src="resource/images/product2.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/product3.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Lips" ><img src="resource/images/product3.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
 <div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/image7.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/images13.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Lips" ><img src="resource/images/images13.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/image4.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Lips" ><img src="resource/images/image4.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 <a></a></div>
 </div> 
 

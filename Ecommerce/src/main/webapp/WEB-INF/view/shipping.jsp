@@ -1,119 +1,154 @@
-<%-- <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@page isELIgnored="false" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Spring Mvc WebFlow Demo</title>
-		<link href="style.css" rel="stylesheet" type="text/css" />
-	</head>
- 
-	<body>
-		<div class="content">
-			<fieldset>
-				<legend>Confirm Details</legend>
-				<!-- for triggering webflow events using links,
-					 the eventId to be triggered is given in "href" attribute as:
-				 -->
-				<a href="index">home</a><br /><br />
-				<sf:form modelAttribute="product">
-					<sf:label path="name">UserName:</sf:label>${product.name}
-					<br /><br />
-					<sf:label path="brand">Brand</sf:label>${product.brand}
-					<br /><br />
-					
-					<!-- for triggering webflow events using form submission,
+<style>
+/* body {
+	background: #eee !important;
+} */
+.wrapper {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.form-signin {
+	max-width: 580px;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: pink;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-signin-heading {
+	margin-bottom: 30px;
+}
+</style>
+
+
+
+<div>
+	<%@ include file="Header.jsp"%>
+</div>
+
+
+<%@taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
+
+<div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+</div>
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+
+
+
+			<sf:form class="form-signin" modelAttribute="address">
+
+				<h2 class="form-signin-heading btn-info" style="width: 100%">Shipping
+					Address</h2>
+				<table class="table">
+					<tr>
+						<td><form:label path="cname">
+								<spring:message text="Customer Name" />
+							</form:label></td>
+						<td><form:input path="cname" style="width:150px;"
+								class="form-control" /></td>
+								<form:input type="hidden" path="cname"></form:input>
+						<td><form:errors path="cname" /></td>
+					</tr>
+
+					<tr>
+						<td><form:label path="caddress">
+								<spring:message text="Address" />
+							</form:label></td>
+						<td><form:input path="caddress" style="width:150px;"
+								class="form-control" /><form:input type="hidden" path="caddress"></form:input></td>
+						<td><form:errors path="caddress" /></td>
+					</tr>
+
+					<tr>
+						<td><form:label path="phone">
+								<spring:message text="phone" />
+							</form:label></td>
+						<td><form:input path="phone" style="width:150px;"
+								class="form-control" /><form:input type="hidden" path="cname"></form:input></td>
+						<td><form:errors path="phone" /></td>
+					</tr>
+
+					<tr>
+						<td><form:label path="zipcode">
+								<spring:message text="Zipcode" />
+							</form:label></td>
+						<td><form:input path="zipcode" style="width:150px;"
+								class="form-control" /></td>
+						<td><form:errors path="zipcode" /></td>
+					</tr>
+
+
+				</table>
+
+				<!-- <div class="row">
+					<div class="col-md-2">
+						<input class="btn btn-info" name="_eventId_edit" type="submit"
+							value="Prev" />
+					</div> -->
+					<div class="col-md-8"></div>
+					<div class="col-md-2">
+						<input class="btn btn-info" name="_eventId_submit" type="submit"
+							value="Next" />
+					</div>
+				</div>
+			</sf:form>
+
+
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+<%-- 
+
+	<sf:label path="pname">Product Name:</sf:label>${product.pname}
+					<br />
+	<br />
+	<sf:label path="pbrand">Brand:</sf:label>${product.pbrand}
+					<br />
+	<br />
+	<sf:label path="pprice">Age :</sf:label>${product.pprice}
+					<br />
+	<br />
+	<!-- for triggering webflow events using form submission,
 					 the eventId to be triggered is given in "name" attribute as:
 					-->
-					
-					<input name="_eventId_submit" type="submit" value="Shipping Details" /><br />
-				</sf:form>
-			</fieldset>
-		</div>
-	</body>
-</html> --%>
-
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
-	
-	 <%@include file="Header.jsp" %>
-	 <div class="container">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
-				<sf:form modelAttribute="product" method="post">
-
-
-					<table class="table table-striped">
-						<thead>
-							<tr>
-
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Description</th>
-								
-								
-							</tr>
-						</thead>
-
-						<tbody>
-
-
-							<tr>
-								<td>${product.name}</td>
-								<td>${product.brand}</td>
-								<td>${product.desc}</td>
-								
-							</tr>
-
-						</tbody>
-
-					</table>
-					<div class="row">
-						<div class="col-md-4"></div>
-						<div class="col-md-4"></div>
-						<div class="col-md-4">
-							<input class="btn btn-info" name="_eventId_submit" type="submit"
-								value="Next" />
-						</div>
-					</div>
-					<br />
-
-				</sf:form>
-
-			</div>
-		</div>
-		
-		 
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<input name="_eventId_edit" type="submit" value="Prev" />
+	<br />
+	<input name="_eventId_submit" type="submit" value="Next" />
+	<br />
+</sf:form> --%>
+<div>
+	<%@ include file="Footer.jsp"%>
+</div>

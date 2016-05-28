@@ -1,4 +1,6 @@
-<%@include file="WEB-INF/view/Header.jsp"%>
+ <%@include file="WEB-INF/view/Header.jsp"%>
+ 
+ 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" interval="1000">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -26,7 +28,7 @@
   </a>
 </div>
 
-<%--images thumbnail start --%>
+<!-- images thumbnail start -->
 
  <div class="row">
  <div class="col-sm-1"></div>
@@ -63,22 +65,6 @@
   
 </div> 
 
-<!-- <div class="container">
-<div class="row">
-<div class="col-sm-4"> 
-<img src="resource/images/face1.jpg" alt="Cinque Terre" style="width:150px;height:150px">
-</div>
-<div class="col-sm-4"> 
-<img src="resource/images/face1.jpg" alt="Cinque Terre" style="width:150px;height:150px">
-</div>
-<div class="col-sm-4"> 
-<img src="resource/images/face1.jpg" alt="Cinque Terre" style="width:150px;height:150px">
-</div>
-
-</div>
-
-
-</div> -->
 
 
 
@@ -88,9 +74,10 @@
 
 
 
-<%--div Row end --%>
+
+<!-- div Row end -->
  <div class="row">
-<div class=col-sm-12">
+<div class="col-sm-12">
 <a href="product"><img src="resource/images/sale.jpg"></a></div></div>
 
 
@@ -99,13 +86,13 @@
 
  <div class="row">
 <div class="col-sm-2"></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product1" ><img src="resource/images/product2.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product" ><img src="resource/images/product2.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/product3.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Lips" ><img src="resource/images/product3.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
 <div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/image7.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
-<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/images13.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+<div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Lips" ><img src="resource/images/images13.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 </a></div>
 <div class="col-sm-2"><a href="${session.getContextPath()}/Ecommerce/product/Eye" ><img src="resource/images/image4.jpg" alt="Cinque Terre" style="width:150px;height:150px">
 <a></a></div>
@@ -123,6 +110,9 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  <script src="resource/bootstrap/js/bootstrap.min.js"></script>
  -->
+ <br>
+ <br>
+ <br>
 
 <%@include file="WEB-INF/view/Footer.jsp" %>
 
@@ -135,3 +125,4 @@
 
   
 
+ 

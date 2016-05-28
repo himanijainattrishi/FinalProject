@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.google.gson.Gson;
-import com.model.Product;
 
+import com.google.gson.Gson;
+import com.model.Item;
+import com.model.Product;
+import com.model.User;
 import com.service.productservice;
 import java.util.Iterator;
 
@@ -72,9 +74,10 @@ public class UserController {
 	public Product initFlow(){
 		return product;
 	}
+	List<Item> cart = null;
+	
 	@RequestMapping("/order")
-	 
-    public String Order() {
+	 public String Order() {
           return "redirect:/memberShip";
     }
 	Product product;
@@ -88,14 +91,7 @@ public class UserController {
 	  }
 	
 	
-	@RequestMapping("/product1")
-	  public ModelAndView page1()
-	  {
-		  
-		  ModelAndView model=new ModelAndView("product1");
-		
-		  return model;
-	  }
+
 	
 	@RequestMapping("/product/{pname}")
 	public ModelAndView Product_Method2(@PathVariable("pname") String name)
@@ -130,4 +126,8 @@ public class UserController {
 	
 	
 
-}}
+}
+	
+	
+	
+	}

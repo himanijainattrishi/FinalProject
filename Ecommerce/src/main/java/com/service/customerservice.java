@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import com.dao.customerimp;
+import com.model.Address;
 import com.model.User;
 
 @Service
@@ -39,4 +41,11 @@ this.c=c;
 		System.out.println("service");
 		  c.adduser(user); 
 		 } 
+	
+	public String insertaddress(Address add) {
+		
+		c.insertaddress(add);
+		return	"success";
+	}
+	
 }

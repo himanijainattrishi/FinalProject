@@ -55,7 +55,10 @@ var app=angular.module("searchApp",[]).controller("TableCtrl",function($scope)
    <input type="hidden" value={{p.id}} name="id"/>
        <input type="hidden" value={{p.name}} name="name"/>
        <input type="hidden" value={{p.brand}} name="brand"/>
+       
       <input type="hidden" value={{p.desc}} name="desc"/>
+        <input type="hidden" value={{p.categ}} name="categ"/>
+          <input type="hidden" value={{p.color}} name="color"/>
         <input type="submit" value="MoreDetails"></form></td>
 
      

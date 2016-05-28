@@ -42,7 +42,7 @@
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<sf:form modelAttribute="address" method="post">
+				<sf:form modelAttribute="product" method="post">
 
 
 					<table class="table table-striped">
@@ -60,7 +60,7 @@
 
 
 							<tr>
-								<td>${address.username}</td>
+								<td>${product.username}</td>
 								
 								
 							</tr>

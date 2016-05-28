@@ -5,6 +5,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/security 
        http://www.springframework.org/schema/security/spring-security.xsd">
+       
         <http auto-config="true">
         
      
@@ -24,6 +25,7 @@
                     </user-service>
        </authentication-provider>
        </authentication-manager> -->
+       
         
         <authentication-manager> 
   <authentication-provider> 

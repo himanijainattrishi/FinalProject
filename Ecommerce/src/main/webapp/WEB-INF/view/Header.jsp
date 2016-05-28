@@ -325,13 +325,13 @@ footer-->.full {
 
 
 								
-								<li class="dropdown-submenu"><a tabindex="-1" href="#">Nails
+								<li class="dropdown-submenu"><a tabindex="-1" href="#">Face
 										<i class="fa fa-chevron-left"></i>
 								</a>
 									<ul class="dropdown-menu">
-										<li><a tabindex="-1" href="#">Nailpaint</a></li>
-										<li><a href="#">NailArt</a></li>
-										<li><a href="#">Manicure & Pedicure Kits</a></li>
+									
+									<li><a href="${session.getContextPath()}/Ecommerce/product/Face">FaceCream</a></li>
+										
 									</ul></li>
 								
 

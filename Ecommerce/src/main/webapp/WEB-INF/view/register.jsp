@@ -72,10 +72,15 @@
                     <td><form:input path="email" /></td>
                 </tr>
                <br>
+               
                 <tr>
                     <td>Gender:</td>
                 <td>  <form:radiobutton path="gender" value="M"/>Male 
                    <form:radiobutton path="gender" value="F"/>Female</td></tr>
+                <tr>
+                <%--  <tr>
+                    <td>Address:</td>
+               <td><form:input path="Address" width="100" height="100" /></td> --%>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Register" /></td>
                 </tr>

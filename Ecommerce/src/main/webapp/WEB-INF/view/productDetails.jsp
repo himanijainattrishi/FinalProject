@@ -8,7 +8,7 @@
   <div class="row">
    <div class="col-md-5">
     <img src="resources/images/${product.id}.jpg" class="image-responsive" height="300" width="300"/>
-   ${p.id}
+  
    </div>
    <div class="col-md-7">
    <div class="row">
@@ -21,6 +21,8 @@
    <div class="row">
  <div class="col-md-12">
   <span class="label label-primary">Color</span>
+  <%=request.getParameter("categ") %>
+  <%=request.getParameter("name") %>
   <span class="monospaced">${product.color}</span>
  </div>
 </div>
@@ -70,7 +72,7 @@
   <!-- <button class="btn btn-lg btn-brand btn-full-width">
    Add to Cart
   </button>
-  -->   <a href="${session.getContextPath()}/Ecommerce/order">add to cart</a></div>
+  -->   <a href="${session.getContextPath()}/Ecommerce/order/${product.id}">add to cart</a></div>
 </div><!-- end row -->
 
 <div class="row">
